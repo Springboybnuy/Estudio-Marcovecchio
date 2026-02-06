@@ -11,7 +11,7 @@
   --font-title: serif;
   --font-body: system-ui, sans-serif;
 
-  --max-width: 72rem;
+  --max-width: 65rem;
   
 }
 
@@ -185,13 +185,17 @@ bio
 
 .bloque-texto {
   text-align: center;
-  margin: 9rem auto 0 auto;
-  max-width: 60%;
+  margin: 9rem auto 0;
+  width: 100%;
+  max-width: var(--max-width);
+  padding: 0 1.5rem;
 }
 
 .bloque-bio{
   margin-top: 0;
-  max-width: 90%;
+  width: 100%;
+  max-width: var(--max-width);
+  padding: 0 1.5rem;
 }
 
 .bio-texto .titular {
@@ -213,15 +217,19 @@ bio
 }
 
 
+
 .bio-contenedor {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 4rem;
+  gap: 2.5rem;
+  width: 100%;
+  flex-wrap: wrap;
 }
 
 .bio-texto {
-  flex: 1.2;
+  flex: 1 1 55%;
+  min-width: 18rem;
 }
 
 .bio-texto span {
@@ -248,16 +256,21 @@ bio
   font-size: 1rem;
 }
 
+
 .bio-imagen {
   margin-top: 1rem;
-  width: 40%;
-  flex: 0.8;
+  flex: 0 0 40%;
+  max-width: 20rem;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .bio-imagen img {
-  max-width: 20rem;
-  margin-left: auto;
+  width: 100%;
+  height: auto;
   max-height: 28.5rem;
+  object-fit: cover;
 }
 
 
