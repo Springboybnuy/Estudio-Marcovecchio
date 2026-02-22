@@ -63,6 +63,7 @@ h1{
 
 p{
   font-family: var(--font--body);
+  text-align: justify;
 }
 
 strong{
@@ -103,17 +104,6 @@ ENCABEZADO
   display: block;
 }
 
-.marca-nombre {
-  font-family: var(--font-title);
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: var(--color-primary);
-}
-
-.marca-rol {
-  font-size: 0.9rem;
-  color: var(--color-muted);
-}
 
 /* nav */
 .nav-principal{
@@ -185,10 +175,14 @@ bio
 
 .bloque-texto {
   text-align: center;
-  margin: 9rem auto 0;
+  margin: 12rem auto 5rem;
   width: 100%;
   max-width: var(--max-width);
   padding: 0 1.5rem;
+}
+
+.bloque-texto p {
+  margin-bottom: 1.5rem;
 }
 
 .bloque-bio{
@@ -212,9 +206,6 @@ bio
   margin: 0;
 }
 
-.destacado{
-  color: #62a6b1;
-}
 
 
 
@@ -274,17 +265,6 @@ bio
 }
 
 
-.bio-separador{
-max-width: 100%;
-width: 20rem;
-height: auto;
-opacity: 0.6;
-}
-
-.btn-principal{
-  padding: 0.9rem 1.4rem;
-  font-size: 1.05rem;
-}
 
 /* quito todos los efectos, revisar */
 a.btn,
@@ -300,8 +280,7 @@ a.btn:active {
 .bio-imagen img {
   width: 100%;
   height: auto;
-  border-radius: 5.5rem 0.8rem 0.8rem 0.8rem;
-  box-shadow: 0 1.2rem 2.5rem rgba(0, 0, 0, 0.45);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.75);
 }
 
 .card {
@@ -314,6 +293,13 @@ a.btn:active {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
+}
+
+.card .card-text {
+  text-align: justify;
+  text-align-last: left;
+  hyphens: auto;
+  -webkit-hyphens: auto;
 }
 
 .areas-contenedor {
@@ -477,6 +463,28 @@ footer{
   text-decoration: none;
   font-size: inherit;
   font-family: inherit;
+}
+
+.footer-marca {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.footer-marca p {
+  font-size: 0.85rem;
+  margin: 0;
+  color: #555;
+}
+
+.footer-marca a {
+  color: #555;
+  font-weight: 500;
+}
+
+.footer-marca a:hover {
+  color: var(--color-primary);
 }
 
 
