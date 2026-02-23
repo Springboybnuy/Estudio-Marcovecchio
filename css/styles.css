@@ -512,6 +512,8 @@ footer{
     .titulo-principal{
       font-size: 1.6rem;
       line-height: 1;
+      max-width: 14rem;
+      margin: 0 auto;
     }
 
 
